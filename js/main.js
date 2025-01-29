@@ -125,69 +125,59 @@
 	};
 
 	// Click outside of offcanvass
-	// var mobileMenuOutsideClick = function() {
-	// 	console.log("6")
-	// 	$(document).click(function (e) {
-	//     var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
-	//     if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-	//     	if ( $('body').hasClass('offcanvas') ) {
-
-    // 			$('body').removeClass('offcanvas');
-    // 			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	//     	}
-	    	
-	//     }
-	// 	});
-
-	// 	$(window).scroll(function(){
-	// 		if ( $('body').hasClass('offcanvas') ) {
-
-    // 			$('body').removeClass('offcanvas');
-    // 			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	//     	}
-	// 	});
-
-	// };
-
 	var mobileMenuOutsideClick = function() {
-		console.log("6");
-	
-		// Prevent clicks inside the menu from closing it
-		$("#colorlib-aside, .js-colorlib-nav-toggle").click(function(e) {
-			e.stopPropagation(); // Stops event from bubbling up
+		console.log("6")
+		$(document).click(function (e) {
+	    var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+	    	if ( $('body').hasClass('offcanvas') ) {
+
+    			// $('body').removeClass('offcanvas');
+    			// $('.js-colorlib-nav-toggle').removeClass('active');
+			
+	    	}
+	    	
+	    }
 		});
-	
-		// Close the menu when clicking outside
-		$(document).click(function(e) {
-			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
-	
-			if (!container.is(e.target) && container.has(e.target).length === 0) {
-				if ($('body').hasClass('offcanvas')) {
-					$('body').removeClass('offcanvas');
-					$('.js-colorlib-nav-toggle').removeClass('active');
-				}
-			}
+
+		$(window).scroll(function(){
+			if ( $('body').hasClass('offcanvas') ) {
+
+    			$('body').removeClass('offcanvas');
+    			$('.js-colorlib-nav-toggle').removeClass('active');
+			
+	    	}
 		});
-	
-		// Close the menu when scrolling
-		$(window).scroll(function() {
-			if ($('body').hasClass('offcanvas')) {
-				$('body').removeClass('offcanvas');
-				$('.js-colorlib-nav-toggle').removeClass('active');
-			}
-		});
-	
-		// Close the menu when clicking a navigation link
-		$("#colorlib-aside a").click(function() {
-			if ($('body').hasClass('offcanvas')) {
-				$('body').removeClass('offcanvas');
-				$('.js-colorlib-nav-toggle').removeClass('active');
-			}
-		});
+
 	};
+
+	// var mobileMenuOutsideClick = function() {
+	// 	console.log("6");
+	// 	$(document).click(function (e) {
+	// 		var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+	// 		if (!container.is(e.target) && container.has(e.target).length === 0) {
+	
+	// 			if ( $('body').hasClass('offcanvas') ) {
+	
+	// 				$('body').removeClass('offcanvas');
+	// 				// $('.js-colorlib-nav-toggle').removeClass('active');
+				
+	// 			}
+				
+	// 		}
+	// 		});
+	
+	// 		$(window).scroll(function(){
+	// 			if ( $('body').hasClass('offcanvas') ) {
+	
+	// 				$('body').removeClass('offcanvas');
+	// 				$('.js-colorlib-nav-toggle').removeClass('active');
+				
+	// 			}
+	// 		});
+	
+	// };
 	
 	
 
