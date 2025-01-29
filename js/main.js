@@ -160,6 +160,7 @@
 			e.stopPropagation(); // Stops event from bubbling up
 		});
 	
+		// Close the menu when clicking outside
 		$(document).click(function(e) {
 			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
 	
@@ -171,13 +172,23 @@
 			}
 		});
 	
+		// Close the menu when scrolling
 		$(window).scroll(function() {
 			if ($('body').hasClass('offcanvas')) {
 				$('body').removeClass('offcanvas');
 				$('.js-colorlib-nav-toggle').removeClass('active');
 			}
 		});
+	
+		// Close the menu when clicking a navigation link
+		$("#colorlib-aside a").click(function() {
+			if ($('body').hasClass('offcanvas')) {
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
 	};
+	
 	
 
 	var clickMenu = function() {
