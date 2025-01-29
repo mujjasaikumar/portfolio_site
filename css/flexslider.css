@@ -260,6 +260,11 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
   cursor: default;
 }
+
+/* #colorlib-aside{
+  overflow-y: scroll;
+} */
+
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
@@ -272,4 +277,18 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: 10px;
   }
+}
+
+.sidebar {
+  position: fixed; /* Keeps the sidebar always visible */
+  width: 250px; /* Adjust width as needed */
+  height: 100vh; /* Full height */
+  background-color: #f4f4f4; /* Example background */
+  overflow: visible; /* Ensures visibility */
+}
+
+.container {
+  position: relative; /* Ensures positioning context */
+  z-index: 10; /* Brings it above other elements */
+  padding: 10px;
 }

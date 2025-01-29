@@ -20,19 +20,26 @@
 			Windows: function() {
 			return navigator.userAgent.match(/IEMobile/i);
 		},
+		// 	any: function() {
+		// 	return (isMobile.BlackBerry() || isMobile.Windows());
+		// }
 			any: function() {
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
 
 	var fullHeight = function() {
-		console.log("1")
-		if ( !isMobile.any() ) {
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
+		});
+		// if ( !isMobile.any() ) {
+		// 	console.log("not isMobile")
+		// 	$('.js-fullheight').css('height', $(window).height());
+		// 	$(window).resize(function(){
+		// 		$('.js-fullheight').css('height', $(window).height());
+		// 	});
+		// }
 	};
 
 
@@ -184,14 +191,16 @@
 		// 	$("#navbar").addClass("open"); // Ensures it stays open when scrolling
 		// });
 
-		// $("#navbar").on("scroll", function (e) {
-		// 	e.stopPropagation(); // Prevents scroll from triggering collapse events
-		// });
+		// if ( !isMobile.any() ) {
+		// 	$("#navbar").on("scroll", function (e) {
+		// 		e.stopPropagation(); // Prevents scroll from triggering collapse events
+		// 	});
+		// }
 
-		$el.find('li').removeClass('active');
-		$el.each(function(){
-			$(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
-		});
+		// $el.find('li').removeClass('active');
+		// $el.each(function(){
+		// 	$(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
+		// });
 
 	};
 
