@@ -21,7 +21,6 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
@@ -45,10 +44,6 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -69,19 +64,13 @@
 				<nav id="colorlib-main-menu" role="navigation" class="navbar">
 					<div id="navbar">
 						<ul>
+							<li class="active"><a href="#" data-nav-section="about">Home</a></li>
 							<li><a href="#" data-nav-section="about">About</a></li>
 							<li><a href="#" data-nav-section="skills">Skills</a></li>
 							<li><a href="#" data-nav-section="education">Education</a></li>
 							<li><a href="#" data-nav-section="experience">Experience</a></li>
 							<li><a href="#" data-nav-section="work">Work</a></li>
 							<li><a href="#" data-nav-section="contact">Contact</a></li>
-							<!-- <li>
-								<a href="https://drive.google.com/file/d/11AO7ZXoJ6Pft48G15UFGdsek2aSwBdDk/view?usp=sharing" 
-								   class="btn btn-primary btn-learn" 
-								   target="_blank">
-									Download CV <i class="icon-download4"></i>
-								</a>
-							</li> -->
 						</ul>
 					</div>
 					<div>
@@ -95,20 +84,11 @@
 							</li>
 						</ul>
 					</div>
-					<!-- <div>
-						<p><a class="btn btn-primary btn-learn">Download CV <i
-							class="icon-download4"></i></a></p>
-					</div> -->
 				</nav>
-
 
 				<div class="colorlib-footer">
 					<div>
 						<ul>
-							<!-- <li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-instagram"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li> -->
 							<li><a href="https://www.linkedin.com/in/saikumar-mujja/" target="_blank" title="LinkedIn" class="text-decoration-none" style="
 								color: #0a66c2; /* LinkedIn brand color */
 								font-size: 24px;
@@ -223,7 +203,7 @@
 
 				<!-- Download CV Button on the Right -->
 				<div style="flex: 1; text-align: right;">
-					<a href="https://drive.google.com/file/d/11AO7ZXoJ6Pft48G15UFGdsek2aSwBdDk/view?usp=sharing" class="btn btn-primary" style="
+					<a href="https://drive.google.com/file/d/11AO7ZXoJ6Pft48G15UFGdsek2aSwBdDk/view?usp=sharing" class="btn btn-primary cv-button" style="
 						border: 2px solid black; /* Black border */
 						color: black; /* Text color */
 						background-color: white; /* White background */
@@ -237,6 +217,42 @@
 					target="_blank">
 						Download CV <i class="icon-download4"></i>
 					</a>
+					<a href="https://drive.google.com/file/d/11AO7ZXoJ6Pft48G15UFGdsek2aSwBdDk/view?usp=sharing" class="cv-text" style="
+						border: 1px solid black; /* Black border */
+						color: black; /* Text color */
+						background-color: white; /* White background */
+						padding: 5px 10px; /* Padding for button */
+						font-weight: bold;
+						text-decoration: none;
+						border-radius: 5px; /* Rounded corners */
+						transition: all 0.3s ease;
+					" onmouseover="this.style.backgroundColor='black'; this.style.color='white';" 
+					onmouseout="this.style.backgroundColor='white'; this.style.color='black';"
+					target="_blank">
+						CV <i class="icon-download4"></i>
+					</a>
+					
+					<style>
+						/* Hide text CV by default */
+						.cv-text {
+							display: none;
+							font-size: 16px;
+							font-weight: bold;
+							color: black;
+							text-decoration: none;
+						}
+					
+						/* Show only text on small screens */
+						@media (max-width: 768px) {
+							.cv-button {
+								display: none;
+							}
+							.cv-text {
+								display: inline;
+								
+							}
+						}
+					</style>
 				</div>
 				</div>
 
@@ -349,119 +365,6 @@
 					</div>
 				</section>
 
-
-
-				<!-- <section class="colorlib-services" data-section="services">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">What I do?</span>
-								<h2 class="colorlib-heading">Here are some of my expertise</h2>
-							</div>
-						</div>
-						<div class="row row-pt-md">
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="icon-bulb"></i>
-									</span>
-									<div class="desc">
-										<h3>Innovative Ideas</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-2">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Software</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-3">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Application</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-4">
-									<span class="icon">
-										<i class="icon-layers2"></i>
-									</span>
-									<div class="desc">
-										<h3>Graphic Design</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-5">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Software</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-6">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Application</h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-
-				<!-- <div id="colorlib-counter" class="colorlib-counters"
-					style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-					<div class="overlay"></div>
-					<div class="colorlib-narrow-content">
-						<div class="row">
-						</div>
-						<div class="row">
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Cups of coffee</span>
-							</div>
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Projects</span>
-							</div>
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Clients</span>
-							</div>
-							<div class="col-md-3 text-center animate-box">
-								<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="colorlib-counter-label">Partners</span>
-							</div>
-						</div>
-					</div>
-				</div> -->
-
 				<section class="colorlib-skills" data-section="skills">
 					<div class="colorlib-narrow-content">
 						<div class="row">
@@ -471,81 +374,7 @@
 								<h2 class="colorlib-heading animate-box">My Skills</h2>
 							</div>
 						</div>
-						<!-- <div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas,
-									wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
-									She packed her seven versalia, put her initial into the belt and made herself on the
-									way.</p>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Photoshop</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>jQuery</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>WordPress</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>SEO</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> -->
-						
+	
 						<div id="skills-container" style="
 							display: grid;
 							grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -687,8 +516,15 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2>Software Developer(Full stack) at EverestIMS Technologies</h2>
-												<p><span>May 2024 - <i>present</i></span></p>
+												<h2>Software Developer(Full stack) at EverestIMS Technologies<br>
+												<span>May 2024 - <i>present</i></span></h2>
+												<ul>
+													<li><strong>Optimized RESTful APIs</strong> using Django REST Framework, resulting in a 30% improvement in data retrieval times and enabling seamless communication between Angular components and backend services.</li>
+													<li><strong>Developed custom data visualization dashboards</strong> for network monitoring, providing real-time insights into device performance and empowering users to make informed decisions.</li>
+													<li><strong>Led code reviews</strong> and root-cause analysis, reducing post-deployment defects by 50% and upholding high code quality standards across full-stack projects.</li>
+													<li><strong>Collaborated with cross-functional teams</strong> to translate client requirements into scalable technical solutions, leveraging full stack development expertise and network infrastructure knowledge, achieving a client satisfaction rate above 90%.</li>
+													<li><strong>Adapted to evolving client priorities</strong> by delivering timely features and updates using Angular, Django, and Azure, consistently maintaining a client satisfaction rate above 90%.</li>
+												</ul>
 												
 											</div>
 										</div>
@@ -701,12 +537,22 @@
 												<i class="icon-pen2"></i>
 											</div>
 											<div class="timeline-label">
-												<h2><a href="#">Front End Developer at Google Company</a>
-													<span>2017-2018</span></h2>
-												<p>Even the all-powerful Pointing has no control about the blind texts
-													it is an almost unorthographic life One day however a small line of
-													blind text by the name of Lorem Ipsum decided to leave for the far
-													World of Grammar.</p>
+												<h2>Python Developer at TCS <br>
+													<span>Feb 2022 - May 2024</span></h2>
+												<ul>
+													<li>
+														Elevated efficiency by implementing automation and developing features using Python, resulting in substantial productivity gains and showcasing proficiency as a Python Developer.
+													</li>
+													<li>
+														Developed RESTful APIs using Python, contributing to backend development and demonstrating expertise in API development and integration as a Python Developer.
+													</li>
+													<li>
+														<strong>Maintained a 99% SLA</strong> adherence by monitoring AWS CloudWatch logs, ensuring smooth transactional operations and showcasing expertise in AWS monitoring tools as a Python Developer.
+													</li>
+													<li>
+														<strong>Investigated and diagnosed root causes of transactional failures</strong>, leveraging Python and MySQL expertise.
+													</li>
+												</ul>
 											</div>
 										</div>
 									</article>
@@ -721,172 +567,62 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Work</span>
+								<span class="heading-meta">Projects</span>
 								<h2 class="colorlib-heading animate-box">Recent Work</h2>
-							</div>
-						</div>
-						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-							<div class="col-md-12">
-								<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a
-											href="#">Web Design</a></span> <span><a href="#">Software</a></span>
-									<span><a href="#">Apps</a></span></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div class="project" style="background-image: url(images/easyCMD.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Work 01</a></h3>
-											<span>Website</span>
+											<h3><a href="https://github.com/mujjasaikumar/easycmd" target="_blank">EasyCMD.exe for Windows</a></h3>
+											<span>Developed EasyCmd, a command-line tool that streamlines complex queries with shortcuts, enhancing productivity by simplifying command execution and management.</span>
 											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+												<span><a href="https://github.com/mujjasaikumar/easycmd" target="_blank"><i class="icon-eye"></i> Preview</a></span>
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div class="project" style="background-image: url(images/wikipedia.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Work 02</a></h3>
-											<span>Animation</span>
+											<h3><a href="https://wikitopics.vercel.app" target="_blank">Wikipedia Topic Explorer</a></h3>
+											<span>Engineered a Wikipedia topic explorer app utilizing the Wikipedia-API for seamless interaction with Wikipedia topics. Integrated ChatGPT 3.5 Turbo model to summarize and paraphrase the selected section.</span>
 											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+												<span><a href="https://wikitopics.vercel.app" target="_blank" target="_blank"><i class="icon-eye"></i> Preview</a></span>
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div class="project" style="background-image: url(images/chatbot.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Work 03</a></h3>
-											<span>Illustration</span>
+											<h3><a href="https://github.com/mujjasaikumar/live_weather_with_Rasa_chatbot" target="_blank">RASA chatbot</a></h3>
+											<span>Developed a chatbot with Rasa Open Source incorporating a custom action to fetch live weather data viathe OpenWeatherMap API, enabling users to inquire about weather conditions in cities using naturallanguage queries.</span>
 											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+												<span><a href="https://github.com/mujjasaikumar/live_weather_with_Rasa_chatbot" target="_blank"><i class="icon-eye"></i> Preview</a></span>
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-								<div class="project" style="background-image: url(images/img-4.jpg);">
+								<div class="project" style="background-image: url(images/swiggy.jpg);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="work.html">Work 04</a></h3>
-											<span>Application</span>
+											<h3><a href="https://github.com/mujjasaikumar/swiggy_restaurant_menu" target="_blank">Swiggy Restaurant Menu Extraction</a></h3>
+											<span>Created Python script to automate restaurant menu extraction from Swiggy API endpoint, using Pandas for efficient data handling and streamlining operations.</span>
 											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+												<span><a href="https://github.com/mujjasaikumar/swiggy_restaurant_menu" target="_blank"><i class="icon-eye"></i> Preview</a></span>
 											</p>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/img-5.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 05</a></h3>
-											<span>Graphic, Logo</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/img-6.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 06</a></h3>
-											<span>Web Design</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-blog" data-section="blog">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Read</span>
-								<h2 class="colorlib-heading">Recent Blog</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i
-													class="icon-bubble3"></i> 4</small></span>
-										<h3><a href="blog.html">Renovating National Gallery</a></h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-											large language ocean.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i
-													class="icon-bubble3"></i> 4</small></span>
-										<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-											large language ocean.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i
-													class="icon-bubble3"></i> 4</small></span>
-										<h3><a href="blog.html">Make website from scratch</a></h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-											large language ocean.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -909,7 +645,7 @@
 										<i class="icon-globe-outline"></i>
 									</div>
 									<div class="colorlib-text">
-										<p><a href="#">info@domain.com</a></p>
+										<p><a href="mailto:mujjasaikumar@gmail.com">mujjasaikumar@gmail.com</a></p>
 									</div>
 								</div>
 
@@ -919,7 +655,7 @@
 										<i class="icon-map"></i>
 									</div>
 									<div class="colorlib-text">
-										<p>198 West 21th Street, Suite 721 New York NY 10016</p>
+										<p>Hyderabad, Telangana, India</p>
 									</div>
 								</div>
 
@@ -929,35 +665,8 @@
 										<i class="icon-phone"></i>
 									</div>
 									<div class="colorlib-text">
-										<p><a href="tel://">+123 456 7890</a></p>
+										<p><a href="tel:+917032337817">+91 70323 37817</a></p>
 									</div>
-								</div>
-							</div>
-							<div class="col-md-7 col-md-push-1">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
-										data-animate-effect="fadeInRight">
-										<form action="">
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Name">
-											</div>
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Email">
-											</div>
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Subject">
-											</div>
-											<div class="form-group">
-												<textarea name="" id="message" cols="30" rows="7" class="form-control"
-													placeholder="Message"></textarea>
-											</div>
-											<div class="form-group">
-												<input type="submit" class="btn btn-primary btn-send-message"
-													value="Send Message">
-											</div>
-										</form>
-									</div>
-
 								</div>
 							</div>
 						</div>
@@ -965,7 +674,7 @@
 				</section>
 
 			</div>
-		</div><!-- end:container-wrap -->
+		</div>
 	</div>
 
 	<!-- jQuery -->
