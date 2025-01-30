@@ -353,7 +353,7 @@
 		clickMenu();
 		navActive();
 		navigationSection();
-		windowScroll();
+		// windowScroll();
 
 
 		mobileMenuOutsideClick();

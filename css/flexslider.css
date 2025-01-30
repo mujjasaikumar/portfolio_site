@@ -287,7 +287,7 @@ html[xmlns] .flexslider .slides {
   overflow: visible; /* Ensures visibility */
 }
 
-.container {
+.container1 {
   position: relative; /* Ensures positioning context */
   z-index: 10; /* Brings it above other elements */
   padding: 10px;
